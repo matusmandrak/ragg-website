@@ -3,7 +3,6 @@
 import { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { useTranslations } from 'next-intl'
-// This is the REAL Supabase client from the file we created earlier
 import { supabase } from '@/lib/supabase/client'
 
 // We only need one definition for our form data
@@ -33,6 +32,11 @@ export default function ContactPage() {
     setSubmitError(null)
     
     try {
+      // Check if supabase client is available
+      if (!supabase) {
+        throw new Error('Database not available');
+      }
+      
       // The real Supabase 'insert' function doesn't need created_at, it's set by the database
       const { error } = await supabase
         .from('contact_submissions')

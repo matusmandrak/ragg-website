@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { getTranslations } from 'next-intl/server'
+import { supabase } from '@/lib/supabase/client'
 
 // This type definition is good practice
 // First, we define what a block of translatable text looks like
@@ -28,12 +29,15 @@ export default async function WorkPage({ params }: WorkPageProps) {
   const { locale } = await params;
   const t = await getTranslations('WorkPage')
   
-  // Conditionally fetch data from Supabase (only if env vars are available)
+  // Conditionally fetch data from Supabase (only if client is available)
   let caseStudies: CaseStudy[] | null = null;
-  if (process.env.NEXT_PUBLIC_SUPABASE_URL && process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY) {
-    const { supabase } = await import('@/lib/supabase/client');
-    const { data } = await supabase.from('case_studies').select()
-    caseStudies = data;
+  if (supabase) {
+    try {
+      const { data } = await supabase.from('case_studies').select()
+      caseStudies = data;
+    } catch (error) {
+      console.warn('Failed to fetch case studies:', error);
+    }
   }
 
   return (

@@ -1,4 +1,5 @@
 
+import { supabase } from '@/lib/supabase/client'
 
 // This type helps us define the shape of the props for this specific page
 interface CaseStudyPageProps {
@@ -12,16 +13,19 @@ interface CaseStudyPageProps {
 export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
   const { locale, slug } = await params;
 
-  // Conditionally fetch case study from Supabase (only if env vars are available)
+  // Conditionally fetch case study from Supabase (only if client is available)
   let caseStudy = null;
-  if (process.env.NEXT_PUBLIC_SUPABASE_URL && process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY) {
-    const { supabase } = await import('@/lib/supabase/client');
-    const { data } = await supabase
-      .from('case_studies')
-      .select()
-      .eq('slug', slug)
-      .single()
-    caseStudy = data;
+  if (supabase) {
+    try {
+      const { data } = await supabase
+        .from('case_studies')
+        .select()
+        .eq('slug', slug)
+        .single()
+      caseStudy = data;
+    } catch (error) {
+      console.warn('Failed to fetch case study:', error);
+    }
   }
 
   // If no case study is found for that slug, show placeholder content
