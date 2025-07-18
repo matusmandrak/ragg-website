@@ -46,7 +46,10 @@ export default function ContactPage() {
       setIsSubmitted(true)
       reset()
     } catch (error) {
-      console.error('Error submitting form:', error)
+      // Log error in development only
+      if (process.env.NODE_ENV === 'development') {
+        console.error('Error submitting form:', error)
+      }
       setSubmitError(t('errorMessage')) // Show an error message to the user
     } finally {
       setIsSubmitting(false)
