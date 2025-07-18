@@ -1,0 +1,60 @@
+{
+  "Navbar": {
+    "about": "O nás",
+    "services": "Služby", 
+    "work": "Naša práca",
+    "contact": "Kontakt"
+  },
+  "HomePage": {
+    "heroTitle": "Budujeme reputáciu, ktorá trvá.",
+    "heroSubtitle": "Strategická komunikácia a riadenie kampaní pre lídrov, ktorí sa neboja vyniknúť. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "heroCta": "Naplánovat konzultáciu",
+    "trustedBy": "Dôverujú nám najlepší",
+    "servicesTitle": "Naše služby",
+    "caseStudiesTitle": "Naše úspešné príbehy",
+    "viewCaseStudy": "Zobraziť prípadovú štúdiu"
+  },
+  "AboutPage": {
+    "title": "O Ragg",
+    "missionTitle": "Naša misia",
+    "missionText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.",
+    "teamTitle": "Zoznámte sa s tímom",
+    "teamText": "Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor."
+  },
+  "ServicesPage": {
+    "title": "Naše Služby",
+    "serviceOneTitle": "Strategická Komunikácia",
+    "serviceOneText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Definujeme a doručujeme silné správy na formovanie vnímania a budovanie vplyvu.",
+    "serviceTwoTitle": "Manažment Kampaní",
+    "serviceTwoText": "Od plánovania po realizáciu riadime kľúčové kampane navrhnuté na dosiahnutie jasných a merateľných cieľov.",
+    "serviceThreeTitle": "Krízový Manažment a Reputácia",
+    "serviceThreeText": "Poskytujeme odborné poradenstvo a rýchlu reakciu na ochranu vašej povesti, keď na tom najviac záleží."
+  },
+  "WorkPage": { 
+    "title": "Naša Práca", 
+    "viewCaseStudy": "Zobraziť Prípadovú Štúdiu" 
+  },
+  "ContactPage": {
+    "title": "Kontaktujte Nás",
+    "subtitle": "Máte na mysli projekt alebo sa chcete dozvedieť viac? Radi si vás vypočujeme.",
+    "nameLabel": "Vaše Meno",
+    "emailLabel": "Váš Email",
+    "messageLabel": "Vaša Správa",
+    "submitButton": "Odoslať Správu",
+    "successMessage": "Ďakujeme! Vaša správa bola úspešne odoslaná. Čoskoro sa vám ozveme.",
+    "errorMessage": "Vyskytla sa chyba. Skúste to prosím neskôr."
+  },
+  "PrivacyPolicyPage": {
+    "title": "Ochrana Osobných Údajov",
+    "content": "Toto je zástupný text pre vaše Zásady ochrany osobných údajov. Nahraďte tento text oficiálnymi zásadami vašej spoločnosti týkajúcimi sa zhromažďovania, používania a ochrany údajov používateľov. Malo by tu byť podrobne opísané, aké údaje zhromažďujete prostredníctvom kontaktného formulára a ako ich používate. Posledná aktualizácia: 18. júla 2025."
+  },
+  "TermsPage": { 
+    "title": "Podmienky Používania", 
+    "content": "Toto je zástupný text pre vaše Podmienky používania..." 
+  },
+  "NotFoundPage": { 
+    "title": "404 - Stránka Nenájdená", 
+    "message": "Je nám ľúto, stránka, ktorú hľadáte, neexistuje alebo bola presunutá.", 
+    "backToHome": "Späť na hlavnú stránku" 
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "Navbar": {
+    "about": "O nás",
+    "services": "Služby", 
+    "work": "Naše práce",
+    "contact": "Kontakt"
+  },
+  "HomePage": {
+    "heroTitle": "Budujeme pověst, která přetrvá.",
+    "heroSubtitle": "Strategická komunikace a řízení kampaní pro lídry, kteří se nebojí vyčnívat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "heroCta": "Naplánovat konzultaci",
+    "trustedBy": "Důvěřují nám ti nejlepší",
+    "servicesTitle": "Naše služby",
+    "caseStudiesTitle": "Naše úspěšné příběhy",
+    "viewCaseStudy": "Zobrazit případovou studii"
+  },
+  "AboutPage": {
+    "title": "O Ragg",
+    "missionTitle": "Naše mise",
+    "missionText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.",
+    "teamTitle": "Seznamte se s týmem",
+    "teamText": "Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor."
+  },
+  "ServicesPage": {
+    "title": "Naše služby",
+    "serviceOneTitle": "Strategická komunikace",
+    "serviceOneText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Definujeme a doručujeme silné zprávy k formování vnímání a budování vlivu.",
+    "serviceTwoTitle": "Management kampaní",
+    "serviceTwoText": "Od plánování po realizaci řídíme klíčové kampaně navržené k dosažení jasných a měřitelných cílů.",
+    "serviceThreeTitle": "Krizový management a reputační management",
+    "serviceThreeText": "Poskytujeme odborné poradenství a rychlou reakci na ochranu vaší pověsti, když na tom nejvíce záleží."
+  },
+  "WorkPage": { 
+    "title": "Naše práce", 
+    "viewCaseStudy": "Zobrazit případovou studii"
+  },
+  "ContactPage": {
+    "title": "Kontaktujte Nás",
+    "subtitle": "Máte na mysli projekt nebo se chcete dozvědět více? Rádi si vás vyslechneme.",
+    "nameLabel": "Vaše Jméno",
+    "emailLabel": "Váš Email",
+    "messageLabel": "Vaše Zpráva",
+    "submitButton": "Odeslat Zprávu",
+    "successMessage": "Děkujeme! Vaše zpráva byla úspěšně odeslána. Brzy se vám ozveme.",
+    "errorMessage": "Došlo k chybě. Zkuste to prosím později."
+  },
+  "PrivacyPolicyPage": {
+    "title": "Ochrana Osobních Údajů",
+    "content": "Toto je zástupný text pro vaše Zásady ochrany osobních údajů. Nahraďte tento text oficiálními zásadami vaší společnosti týkajícími se shromažďování, používání a ochrany údajů uživatelů. Mělo by zde být podrobně popsáno, jaké údaje shromažďujete prostřednictvím kontaktního formuláře a jak je používáte. Poslední aktualizace: 18. července 2025."
+  },
+  "TermsPage": { 
+    "title": "Podmínky Použití", 
+    "content": "Toto je zástupný text pro vaše Podmínky použití..." 
+  },
+  "NotFoundPage": { 
+    "title": "404 - Stránka Nenalezena", 
+    "message": "Je nám líto, stránka, kterou hledáte, neexistuje nebo byla přesunuta.", 
+    "backToHome": "Zpět na hlavní stránku" 
+  }
+}

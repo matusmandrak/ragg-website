@@ -1,0 +1,60 @@
+{
+  "Navbar": {
+    "about": "About",
+    "services": "Services", 
+    "work": "Our Work",
+    "contact": "Contact"
+  },
+  "HomePage": {
+    "heroTitle": "We build reputation that lasts.",
+    "heroSubtitle": "Strategic communication and campaign management for leaders who are not scared to stand out. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "heroCta": "Schedule a consultation",
+    "trustedBy": "Trusted by the best",
+    "servicesTitle": "Our services",
+    "caseStudiesTitle": "Our success stories",
+    "viewCaseStudy": "View case study"
+  },
+  "AboutPage": {
+    "title": "About Ragg",
+    "missionTitle": "Our Mission",
+    "missionText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.",
+    "teamTitle": "Meet the Team",
+    "teamText": "Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor."
+  },
+  "ServicesPage": {
+    "title": "Our Services",
+    "serviceOneTitle": "Strategic communication",
+    "serviceOneText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. We define and deliver powerful messages to shape perception and build influence.",
+    "serviceTwoTitle": "Campaign management",
+    "serviceTwoText": "From planning to execution, we manage high-stakes campaigns designed to achieve clear, measurable objectives.",
+    "serviceThreeTitle": "Crisis & Reputation Management",
+    "serviceThreeText": "We provide expert counsel and rapid response to protect your reputation when it matters most."
+  },
+  "WorkPage": {
+    "title": "Our Work",
+    "viewCaseStudy": "View case study"
+  },
+  "ContactPage": {
+    "title": "Get in Touch",
+    "subtitle": "Have a project in mind or want to learn more? We'd love to hear from you.",
+    "nameLabel": "Your Name",
+    "emailLabel": "Your Email",
+    "messageLabel": "Your Message",
+    "submitButton": "Send Message",
+    "successMessage": "Thank you! Your message has been sent successfully. We will get back to you shortly.",
+    "errorMessage": "An error occurred. Please try again later."
+  },
+  "PrivacyPolicyPage": {
+    "title": "Privacy Policy",
+    "content": "This is a placeholder for your Privacy Policy. Replace this text with your official company policy regarding data collection, usage, and protection of user information. This should detail what data you collect from the contact form and how you use it. Last updated: July 18, 2025."
+  },
+  "TermsPage": { 
+    "title": "Terms of Service", 
+    "content": "This is a placeholder for your Terms of Service..." 
+  },
+  "NotFoundPage": { 
+    "title": "404 - Page Not Found", 
+    "message": "Sorry, the page you are looking for does not exist or has been moved.", 
+    "backToHome": "Go back to Homepage" 
+  }
+}
