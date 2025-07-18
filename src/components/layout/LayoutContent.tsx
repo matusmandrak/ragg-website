@@ -1,23 +1,21 @@
 "use client";
 
 import { ReactNode } from 'react';
-import { NextIntlClientProvider, useMessages } from 'next-intl';
-import { pick } from 'lodash';
+import { NextIntlClientProvider } from 'next-intl';
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
 interface LayoutContentProps {
   children: ReactNode;
   locale: string;
+  messages: any;
 }
 
-export default function LayoutContent({ children, locale }: LayoutContentProps) {
-  const messages = useMessages();
-
+export default function LayoutContent({ children, locale, messages }: LayoutContentProps) {
   return (
     <NextIntlClientProvider
       locale={locale}
-      messages={pick(messages, 'Navbar', 'Footer', 'ContactPage', 'NotFoundPage')}
+      messages={messages}
     >
       <Navbar />
       <main>{children}</main>
