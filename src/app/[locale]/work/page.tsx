@@ -20,12 +20,13 @@ type CaseStudy = {
 }
 
 interface WorkPageProps {
-  params: {
+  params: Promise<{
     locale: string;
-  }
+  }>
 }
 
-export default async function WorkPage({ params: { locale } }: WorkPageProps) {
+export default async function WorkPage({ params }: WorkPageProps) {
+  const { locale } = await params;
   const t = await getTranslations('WorkPage')
   
   // This now fetches REAL data from your Supabase database

@@ -3,14 +3,15 @@ import { supabase } from '@/lib/supabase/client'
 
 // This type helps us define the shape of the props for this specific page
 interface CaseStudyPageProps {
-  params: {
+  params: Promise<{
     locale: string;
     slug: string;
-  }
+  }>
 }
 
 // This is an async Server Component that fetches data
-export default async function CaseStudyPage({ params: { locale, slug } }: CaseStudyPageProps) {
+export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
+  const { locale, slug } = await params;
 
   // This fetches only ONE case study from Supabase where the slug matches the URL
   const { data: caseStudy } = await supabase

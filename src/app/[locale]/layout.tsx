@@ -21,13 +21,14 @@ export const metadata: Metadata = {
   description: "Consultancy and strategy services in communication and campaign management.",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
-  params: { locale }
+  params
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
+  const { locale } = await params;
   const messages = useMessages();
 
   return (
