@@ -8,7 +8,7 @@ import Footer from "@/components/layout/Footer";
 interface LayoutContentProps {
   children: ReactNode;
   locale: string;
-  messages: any;
+  messages: Record<string, any>;
 }
 
 export default function LayoutContent({ children, locale, messages }: LayoutContentProps) {
