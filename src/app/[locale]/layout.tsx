@@ -3,6 +3,7 @@ import { Inter, Playfair_Display } from "next/font/google";
 import { NextIntlClientProvider, useMessages } from 'next-intl';
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import { pick } from 'lodash';
 import "./globals.css";
 
 const inter = Inter({
@@ -32,11 +33,12 @@ export default function RootLayout({
   return (
     <html lang={locale}>
       <body className={`${inter.variable} ${playfair.variable} font-sans`}>
-        <NextIntlClientProvider locale={locale} messages={messages}>
+        <NextIntlClientProvider
+          locale={locale}
+          messages={pick(messages, 'Navbar', 'Footer', 'ContactPage', 'NotFoundPage')}
+        >
           <Navbar />
-          <main>
-            {children}
-          </main>
+          <main>{children}</main>
           <Footer />
         </NextIntlClientProvider>
       </body>
