@@ -3,11 +3,19 @@ import { getTranslations } from 'next-intl/server'
 import { supabase } from '@/lib/supabase/client' // This is the real Supabase connection
 
 // This type definition is good practice
+// First, we define what a block of translatable text looks like
+type TranslatableText = {
+  en: string;
+  cs: string;
+  sk: string;
+}
+
+// Then, we use that definition in our CaseStudy type
 type CaseStudy = {
   id: number;
   slug: string;
-  title: any;   // Kept as 'any' to easily handle the {en, cs, sk} object
-  summary: any; // Kept as 'any' to easily handle the {en, cs, sk} object
+  title: TranslatableText;
+  summary: TranslatableText;
   image_url: string | null;
 }
 

@@ -12,7 +12,6 @@ interface CaseStudyPageProps {
 
 // This is an async Server Component that fetches data
 export default async function CaseStudyPage({ params: { locale, slug } }: CaseStudyPageProps) {
-  const t = await getTranslations('WorkPage'); // We can reuse keys from WorkPage like 'viewCaseStudy'
 
   // This fetches only ONE case study from Supabase where the slug matches the URL
   const { data: caseStudy } = await supabase
