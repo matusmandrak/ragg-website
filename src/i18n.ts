@@ -4,6 +4,7 @@ export default getRequestConfig(async ({locale}) => {
   // This is the only line that should be in this file.
   // It dynamically loads the right messages for the server.
   return {
+    locale: locale as string,
     messages: (await import(`./messages/${locale}.json`)).default
   };
 });
