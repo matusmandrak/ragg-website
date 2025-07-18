@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
-import Navbar from "../../components/layout/Navbar";
-import Footer from "../../components/layout/Footer";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
 import "./globals.css";
 
 const inter = Inter({
@@ -42,20 +42,19 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   };
 }
 
+// The main fix is simplifying the type definition in the function signature below
 export default async function RootLayout({
   children,
   params: { locale }
-}: Readonly<{
+}: {
   children: React.ReactNode;
   params: { locale: string };
-}>) {
+}) {
   const messages = await getMessages();
 
   return (
     <html lang={locale}>
-      <body
-        className={`${inter.variable} ${playfair.variable} font-sans antialiased`}
-      >
+      <body className={`${inter.variable} ${playfair.variable} font-sans`}>
         <NextIntlClientProvider messages={messages}>
           <Navbar />
           <main>
