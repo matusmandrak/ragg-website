@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
-import { NextIntlClientProvider } from 'next-intl';
-import { getMessages, getTranslations } from 'next-intl/server';
+import { NextIntlClientProvider, useMessages } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import { pick } from 'lodash';
 import "./globals.css";
 
 const inter = Inter({
@@ -42,20 +43,26 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   };
 }
 
-// The main fix is simplifying the type definition in the function signature below
-export default async function RootLayout({
+export default function RootLayout({
   children,
   params: { locale }
 }: {
   children: React.ReactNode;
   params: { locale: string };
 }) {
-  const messages = await getMessages();
+  const messages = useMessages();
 
   return (
     <html lang={locale}>
       <body className={`${inter.variable} ${playfair.variable} font-sans`}>
-        <NextIntlClientProvider messages={messages}>
+        {/*
+          By picking only the messages that are used in client components,
+          we prevent the entire messages object from being sent to the client,
+          which is better for performance and can resolve complex type issues.
+        */}
+        <NextIntlClientProvider
+          messages={pick(messages, 'Navbar', 'Footer', 'ContactPage', 'NotFoundPage')}
+        >
           <Navbar />
           <main>
             {children}
