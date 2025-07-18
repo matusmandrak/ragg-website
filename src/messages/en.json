@@ -5,6 +5,18 @@
     "work": "Our Work",
     "contact": "Contact"
   },
+  "Footer": {
+    "about": "About",
+    "services": "Services",
+    "work": "Our Work",
+    "contact": "Contact",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "description": "Strategic communication and campaign management for leaders who are not scared to stand out.",
+    "quickLinks": "Quick Links",
+    "legal": "Legal",
+    "copyright": "© 2025 Ragg | All Rights Reserved"
+  },
   "HomePage": {
     "heroTitle": "We build reputation that lasts.",
     "heroSubtitle": "Strategic communication and campaign management for leaders who are not scared to stand out. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",

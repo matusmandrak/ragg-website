@@ -1,5 +1,4 @@
-import { notFound } from 'next/navigation'
-import { supabase } from '@/lib/supabase/client'
+
 
 // This type helps us define the shape of the props for this specific page
 interface CaseStudyPageProps {
@@ -13,16 +12,32 @@ interface CaseStudyPageProps {
 export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
   const { locale, slug } = await params;
 
-  // This fetches only ONE case study from Supabase where the slug matches the URL
-  const { data: caseStudy } = await supabase
-    .from('case_studies')
-    .select()
-    .eq('slug', slug)
-    .single()
+  // Conditionally fetch case study from Supabase (only if env vars are available)
+  let caseStudy = null;
+  if (process.env.NEXT_PUBLIC_SUPABASE_URL && process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY) {
+    const { supabase } = await import('@/lib/supabase/client');
+    const { data } = await supabase
+      .from('case_studies')
+      .select()
+      .eq('slug', slug)
+      .single()
+    caseStudy = data;
+  }
 
-  // If no case study is found for that slug, show the 404 page
+  // If no case study is found for that slug, show placeholder content
   if (!caseStudy) {
-    notFound();
+    return (
+      <div className="container mx-auto px-4 py-16">
+        <div className="text-center">
+          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4">
+            Case Study: {slug}
+          </h1>
+          <p className="text-xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">
+            This case study will be displayed when the database is connected.
+          </p>
+        </div>
+      </div>
+    );
   }
   
   return (

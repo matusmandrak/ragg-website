@@ -1,18 +1,22 @@
+'use client'
+
 import Link from 'next/link'
-
-const quickLinks = [
-  { name: 'About', href: '/about' },
-  { name: 'Services', href: '/services' },
-  { name: 'Our Work', href: '/work' },
-  { name: 'Contact', href: '/contact' },
-]
-
-const legalLinks = [
-  { name: 'Privacy Policy', href: '/privacy' },
-  { name: 'Terms of Service', href: '/terms' },
-]
+import { useTranslations } from 'next-intl'
 
 export default function Footer() {
+  const t = useTranslations('Footer')
+
+  const quickLinks = [
+    { name: t('about'), href: '/about' },
+    { name: t('services'), href: '/services' },
+    { name: t('work'), href: '/work' },
+    { name: t('contact'), href: '/contact' },
+  ]
+
+  const legalLinks = [
+    { name: t('privacyPolicy'), href: '/privacy-policy' },
+    { name: t('termsOfService'), href: '/terms-of-service' },
+  ]
   return (
     <footer className="bg-brand-dark text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -24,13 +28,13 @@ export default function Footer() {
               RAGG
             </Link>
             <p className="text-gray-300 text-sm leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              {t('description')}
             </p>
           </div>
 
           {/* Column 2: Quick Links */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Quick Links</h3>
+            <h3 className="text-lg font-semibold">{t('quickLinks')}</h3>
             <ul className="space-y-2">
               {quickLinks.map((link) => (
                 <li key={link.name}>
@@ -47,7 +51,7 @@ export default function Footer() {
 
           {/* Column 3: Legal */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Legal</h3>
+            <h3 className="text-lg font-semibold">{t('legal')}</h3>
             <ul className="space-y-2">
               {legalLinks.map((link) => (
                 <li key={link.name}>
@@ -66,7 +70,7 @@ export default function Footer() {
         {/* Copyright */}
         <div className="mt-12 pt-8 border-t border-gray-700">
           <p className="text-center text-gray-400 text-sm">
-            © 2025 Ragg | All Rights Reserved
+            {t('copyright')}
           </p>
         </div>
       </div>

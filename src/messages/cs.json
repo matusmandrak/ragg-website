@@ -5,6 +5,18 @@
     "work": "Naše práce",
     "contact": "Kontakt"
   },
+  "Footer": {
+    "about": "O nás",
+    "services": "Služby",
+    "work": "Naše práce",
+    "contact": "Kontakt",
+    "privacyPolicy": "Ochrana osobních údajů",
+    "termsOfService": "Podmínky použití",
+    "description": "Strategická komunikace a řízení kampaní pro lídry, kteří se nebojí vyčnívat.",
+    "quickLinks": "Rychlé odkazy",
+    "legal": "Právní informace",
+    "copyright": "© 2025 Ragg | Všechna práva vyhrazena"
+  },
   "HomePage": {
     "heroTitle": "Budujeme pověst, která přetrvá.",
     "heroSubtitle": "Strategická komunikace a řízení kampaní pro lídry, kteří se nebojí vyčnívat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",

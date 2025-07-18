@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import { getTranslations } from 'next-intl/server'
-import { supabase } from '@/lib/supabase/client' // This is the real Supabase connection
 
 // This type definition is good practice
 // First, we define what a block of translatable text looks like
@@ -29,8 +28,13 @@ export default async function WorkPage({ params }: WorkPageProps) {
   const { locale } = await params;
   const t = await getTranslations('WorkPage')
   
-  // This now fetches REAL data from your Supabase database
-  const { data: caseStudies } = await supabase.from('case_studies').select()
+  // Conditionally fetch data from Supabase (only if env vars are available)
+  let caseStudies: CaseStudy[] | null = null;
+  if (process.env.NEXT_PUBLIC_SUPABASE_URL && process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY) {
+    const { supabase } = await import('@/lib/supabase/client');
+    const { data } = await supabase.from('case_studies').select()
+    caseStudies = data;
+  }
 
   return (
     <div className="container mx-auto px-4 py-16">
@@ -56,7 +60,13 @@ export default async function WorkPage({ params }: WorkPageProps) {
               </Link>
             </div>
           </div>
-        ))}
+        )) || (
+          <div className="col-span-full text-center py-12">
+            <p className="text-gray-600 text-lg">
+              Case studies will be displayed here when database is connected.
+            </p>
+          </div>
+        )}
       </div>
     </div>
   )
