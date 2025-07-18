@@ -1,5 +1,4 @@
 import { notFound } from 'next/navigation'
-import { getTranslations } from 'next-intl/server'
 import { supabase } from '@/lib/supabase/client'
 
 // This type helps us define the shape of the props for this specific page
