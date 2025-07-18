@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import { getMessages } from 'next-intl/server';
-import { pick } from 'lodash';
 import LayoutContent from "@/components/layout/LayoutContent";
 import "./globals.css";
 
@@ -35,7 +34,7 @@ export default async function RootLayout({
       <body className={`${inter.variable} ${playfair.variable} font-sans`}>
         <LayoutContent 
           locale={locale}
-          messages={pick(messages, 'Navbar', 'Footer', 'ContactPage', 'NotFoundPage')}
+          messages={messages}
         >
           {children}
         </LayoutContent>
