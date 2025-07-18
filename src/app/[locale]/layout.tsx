@@ -4,7 +4,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
 import Navbar from "../../components/layout/Navbar";
 import Footer from "../../components/layout/Footer";
-import "../globals.css";
+import "./globals.css";
 
 const inter = Inter({
   variable: "--font-inter",
