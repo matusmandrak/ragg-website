@@ -1,3 +1,4 @@
+/*
 'use client'
 
 import { useState } from 'react'
@@ -156,4 +157,14 @@ export default function ContactPage() {
       </div>
     </div>
   )
+}
+
+*/
+
+export default function ContactPage() {
+  return (
+    <div className="min-h-screen">
+      {/* This page is intentionally blank for now. */}
+    </div>
+  );
 }

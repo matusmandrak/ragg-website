@@ -20,12 +20,12 @@ export default function Navbar() {
   ]
 
   return (
-    <nav className="bg-white border-b border-gray-200">
+    <nav className="bg-transparent border-b border-brand-dark/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link href={`/${locale}`} className="font-serif text-2xl font-bold text-gray-900 hover:text-brand-red transition-colors">
+            <Link href={`/${locale}`} className="font-serif text-2xl font-bold text-brand-light hover:text-brand-light transition-colors">
               RAGG
             </Link>
           </div>
@@ -37,10 +37,10 @@ export default function Navbar() {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className={`px-3 py-2 text-sm font-medium transition-colors hover:text-brand-red ${
+                  className={`px-3 py-2 text-sm font-medium transition-colors hover:text-brand-light ${
                     pathname === link.href
-                      ? 'text-brand-red border-b-2 border-brand-red'
-                      : 'text-gray-700'
+                      ? 'text-brand-light border-b-2 border-brand-light'
+                      : 'text-brand-light'
                   }`}
                 >
                   {link.name}
@@ -58,7 +58,7 @@ export default function Navbar() {
             <button
               type="button"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-700 hover:text-brand-red hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-brand-red"
+              className="bg-transparent rounded-md p-2 inline-flex items-center justify-center text-brand-light hover:text-brand-light hover:bg-brand-dark/20 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-brand-light"
               aria-expanded={isMobileMenuOpen}
             >
               <span className="sr-only">Open main menu</span>
@@ -95,16 +95,16 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-gray-200">
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-brand-red border-t border-brand-dark/30">
             {navigationLinks.map((link) => (
               <Link
                 key={link.name}
                 href={link.href}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className={`block px-3 py-2 text-base font-medium transition-colors hover:text-brand-red hover:bg-gray-50 rounded-md ${
+                className={`block px-3 py-2 text-base font-medium transition-colors hover:text-brand-light hover:bg-brand-dark/20 rounded-md ${
                   pathname === link.href
-                    ? 'text-brand-red bg-gray-50'
-                    : 'text-gray-700'
+                    ? 'text-brand-light bg-brand-dark/20'
+                    : 'text-brand-light'
                 }`}
               >
                 {link.name}

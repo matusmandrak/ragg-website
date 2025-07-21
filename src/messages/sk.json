@@ -22,13 +22,51 @@
     "copyright": "© 2025 Ragg | Všetky práva vyhradené"
   },
   "HomePage": {
-    "heroTitle": "Budujeme reputáciu, ktorá trvá.",
-    "heroSubtitle": "Strategická komunikácia a riadenie kampaní pre lídrov, ktorí sa neboja vyniknúť. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "heroCta": "Naplánovat konzultáciu",
-    "trustedBy": "Dôverujú nám najlepší",
-    "servicesTitle": "Naše služby",
-    "caseStudiesTitle": "Naše úspešné príbehy",
-    "viewCaseStudy": "Zobraziť prípadovú štúdiu"
+  "heroTitle": "NESLEDUJEME NARATÍV. MY HO PÍŠEME.",
+  "heroCta": "POZNAJTE, AKO ROZMÝŠĽAME"
+  },
+  "Manifesto": {
+    "text": "Existujeme pre tých, ktorí vyčnievajú. Pre ambicióznu hŕstku, ktorá chápe, že skutočný vplyv sa nežiada – ten sa precízne vytvára. My netvoríme len kampane; my budujeme odkazy."
+  },
+  "Arsenal": {
+    "title": "ARZENÁL",
+    "step1Title": "01. VZDOR",
+    "step1Text": "Analyzujeme status quo a identifikujeme jediný, neotrasiteľný bod zvratu.",
+    "step2Title": "02. RUKOPIS",
+    "step2Text": "Tu navrhujeme krok, ktorý nikto nečaká. Kreatívny a strategický rámec šitý na mieru.",
+    "step3Title": "03. NADVLÁDA",
+    "step3Text": "My sa len nezúčastňujeme. My vytvárame trhovú alebo naratívnu dominanciu, ktorá pretrvá."
+  },
+  "Arena": {
+    "title": "ARÉNA",
+    "project1Client": "MINISTERSTVO ENERGETIKY KRAJINY G7",
+    "project1Title": "PREPÍSALI SME NÁRODNÚ DEBATU O ENERGETIKE.",
+    "project1Cta": "PRESKÚMAŤ KAMPAŇ",
+    "project2Client": "LÍDER V GLOBÁLNYCH TELEKOMUNIKÁCIÁCH",
+    "project2Title": "Z TRADIČNEJ ZNAČKY DISRUPTÍVNOU SILOU ZA ŠESŤ MESIACOV.",
+    "project2Cta": "PRESKÚMAŤ KAMPAŇ"
+  },
+  "Filter": {
+    "title": "NIE JE TO PRE KAŽDÉHO.",
+    "forYouTitle": "PRE VÁS, AK...",
+    "forYouItems": [
+      "Máte presvedčenie.",
+      "Ceníte si expertízu nad nákladmi.",
+      "Ste pripravení byť odvážni.",
+      "Vaším cieľom je zanechať odkaz."
+    ],
+    "notForYouTitle": "NIE JE PRE VÁS, AK...",
+    "notForYouItems": [
+      "Rozhodujete v kolektíve.",
+      "Hľadáte najlacnejšiu ponuku.",
+      "Chcete splynúť s davom."
+    ]
+  },
+  "FirstStep": {
+    "title": "KONVERZÁCIA ZAČÍNA TU.",
+    "text": "Neodpovedáme na dopyty. Náš proces začína jedinou, intenzívnou strategickou konzultáciou, aby sme zistili, či sme pre seba vhodní.",
+    "challengeLabel": "VAŠA VÝZVA",
+    "submitCta": "PREDLOŽTE SVOJU VÝZVU"
   },
   "AboutPage": {
     "title": "O Ragg",
@@ -55,6 +93,7 @@
     "subtitle": "Máte na mysli projekt alebo sa chcete dozvedieť viac? Radi si vás vypočujeme.",
     "nameLabel": "Vaše Meno",
     "emailLabel": "Váš Email",
+    "companyLabel": "Firma",
     "messageLabel": "Vaša Správa",
     "submitButton": "Odoslať Správu",
     "successMessage": "Ďakujeme! Vaša správa bola úspešne odoslaná. Čoskoro sa vám ozveme.",

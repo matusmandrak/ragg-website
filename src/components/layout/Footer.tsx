@@ -19,29 +19,29 @@ export default function Footer() {
     { name: t('termsOfService'), href: `/${locale}/terms-of-service` },
   ]
   return (
-    <footer className="bg-brand-dark text-white">
+    <footer className="bg-brand-dark text-brand-muted">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Three Column Layout */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Column 1: Logo and Description */}
           <div className="space-y-4">
-            <Link href={`/${locale}`} className="font-serif text-2xl font-bold hover:text-gray-300 transition-colors">
+            <Link href={`/${locale}`} className="font-serif text-2xl font-bold text-brand-muted hover:text-brand-light transition-colors">
               RAGG
             </Link>
-            <p className="text-gray-300 text-sm leading-relaxed">
+            <p className="text-brand-muted text-sm leading-relaxed">
               {t('description')}
             </p>
           </div>
 
           {/* Column 2: Quick Links */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold">{t('quickLinks')}</h3>
+            <h3 className="text-lg font-semibold text-brand-muted">{t('quickLinks')}</h3>
             <ul className="space-y-2">
               {quickLinks.map((link) => (
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-gray-300 hover:text-white transition-colors text-sm"
+                    className="text-brand-muted hover:text-brand-light transition-colors text-sm"
                   >
                     {link.name}
                   </Link>
@@ -52,13 +52,13 @@ export default function Footer() {
 
           {/* Column 3: Legal */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold">{t('legal')}</h3>
+            <h3 className="text-lg font-semibold text-brand-muted">{t('legal')}</h3>
             <ul className="space-y-2">
               {legalLinks.map((link) => (
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-gray-300 hover:text-white transition-colors text-sm"
+                    className="text-brand-muted hover:text-brand-light transition-colors text-sm"
                   >
                     {link.name}
                   </Link>
@@ -69,8 +69,8 @@ export default function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="mt-12 pt-8 border-t border-gray-700">
-          <p className="text-center text-gray-400 text-sm">
+        <div className="mt-12 pt-8 border-t border-brand-dark/50">
+          <p className="text-center text-brand-muted text-sm">
             {t('copyright')}
           </p>
         </div>

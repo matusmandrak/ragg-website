@@ -31,7 +31,7 @@ export default async function RootLayout({
   
   return (
     <html lang={locale}>
-      <body className={`${inter.variable} ${playfair.variable} font-sans`}>
+      <body className={`${inter.variable} ${playfair.variable} font-sans bg-brand-red text-brand-light`}>
         <LayoutContent 
           locale={locale}
           messages={messages}

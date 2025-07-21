@@ -22,13 +22,51 @@
     "copyright": "© 2025 Ragg | All Rights Reserved"
   },
   "HomePage": {
-    "heroTitle": "We build reputation that lasts.",
-    "heroSubtitle": "Strategic communication and campaign management for leaders who are not scared to stand out. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "heroCta": "Schedule a consultation",
-    "trustedBy": "Trusted by the best",
-    "servicesTitle": "Our services",
-    "caseStudiesTitle": "Our success stories",
-    "viewCaseStudy": "View case study"
+    "heroTitle": "WE DON'T FOLLOW THE NARRATIVE. WE WRITE IT.",
+    "heroCta": "SEE HOW WE THINK"
+  },
+  "Manifesto": {
+    "text": "We exist for the outliers. The ambitious few who understand that true influence isn't requested. It's engineered. We don't just build campaigns; we build legacies."
+  },
+  "Arsenal": {
+    "title": "THE ARSENAL",
+    "step1Title": "01. DEFIANCE",
+    "step1Text": "We dissect the status quo and identify the one unassailable point of leverage.",
+    "step2Title": "02. SIGNATURE",
+    "step2Text": "This is where we architect the move that no one sees coming. A bespoke creative and strategic framework.",
+    "step3Title": "03. ASCENDANCY",
+    "step3Text": "We don't just participate. We engineer market or narrative dominance that endures."
+  },
+  "Arena": {
+    "title": "THE ARENA",
+    "project1Client": "A G7 NATION'S MINISTRY OF ENERGY",
+    "project1Title": "REDEFINING A NATION'S ENERGY DEBATE.",
+    "project1Cta": "DISSECT THE CAMPAIGN",
+    "project2Client": "A LEADER IN GLOBAL TELECOMMUNICATIONS",
+    "project2Title": "FROM LEGACY BRAND TO DISRUPTIVE FORCE IN SIX MONTHS.",
+    "project2Cta": "DISSECT THE CAMPAIGN"
+  },
+  "Filter": {
+    "title": "THIS IS NOT FOR EVERYONE.",
+    "forYouTitle": "FOR YOU IF...",
+    "forYouItems": [
+      "You have conviction.",
+      "You value expertise over expense.",
+      "You are prepared to be bold.",
+      "Your goal is to leave a legacy."
+    ],
+    "notForYouTitle": "NOT FOR YOU IF...",
+    "notForYouItems": [
+      "You manage by committee.",
+      "You are searching for the lowest bidder.",
+      "You prefer to blend in."
+    ]
+  },
+  "FirstStep": {
+    "title": "THE CONVERSATION STARTS HERE.",
+    "text": "We don't respond to RFPs. Our process begins with a single, intensive strategic consultation to see if we are a fit.",
+    "challengeLabel": "YOUR CHALLENGE",
+    "submitCta": "SUBMIT YOUR CHALLENGE"
   },
   "AboutPage": {
     "title": "About Ragg",
@@ -54,6 +92,7 @@
     "title": "Get in Touch",
     "subtitle": "Have a project in mind or want to learn more? We'd love to hear from you.",
     "nameLabel": "Your Name",
+    "companyLabel": "Company",
     "emailLabel": "Your Email",
     "messageLabel": "Your Message",
     "submitButton": "Send Message",
