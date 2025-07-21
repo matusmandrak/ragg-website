@@ -1,9 +1,10 @@
 'use client'
 
-import { useTranslations } from 'next-intl'
+import { useTranslations, useLocale } from 'next-intl'
 import Link from 'next/link'
 
 export default function NotFoundPage() {
+  const locale = useLocale()
   const t = useTranslations('NotFoundPage')
 
   return (
@@ -17,7 +18,7 @@ export default function NotFoundPage() {
       </p>
 
       <Link
-        href="/"
+        href={`/${locale}`}
         className="bg-brand-red hover:bg-red-700 text-white font-semibold px-8 py-4 rounded-lg transition-colors shadow-lg hover:shadow-xl"
       >
         {t('backToHome')}

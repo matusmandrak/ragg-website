@@ -3,7 +3,11 @@
     "about": "O nás",
     "services": "Služby", 
     "work": "Naše práce",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "languageSwitcher": "Jazyk",
+    "english": "English",
+    "czech": "Čeština",
+    "slovak": "Slovenčina"
   },
   "Footer": {
     "about": "O nás",

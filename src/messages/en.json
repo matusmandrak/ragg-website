@@ -3,7 +3,11 @@
     "about": "About",
     "services": "Services", 
     "work": "Our Work",
-    "contact": "Contact"
+    "contact": "Contact",
+    "languageSwitcher": "Language",
+    "english": "English",
+    "czech": "Čeština",
+    "slovak": "Slovenčina"
   },
   "Footer": {
     "about": "About",

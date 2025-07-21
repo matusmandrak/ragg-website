@@ -1,21 +1,22 @@
 'use client'
 
 import Link from 'next/link'
-import { useTranslations } from 'next-intl'
+import { useTranslations, useLocale } from 'next-intl'
 
 export default function Footer() {
+  const locale = useLocale()
   const t = useTranslations('Footer')
 
   const quickLinks = [
-    { name: t('about'), href: '/about' },
-    { name: t('services'), href: '/services' },
-    { name: t('work'), href: '/work' },
-    { name: t('contact'), href: '/contact' },
+    { name: t('about'), href: `/${locale}/about` },
+    { name: t('services'), href: `/${locale}/services` },
+    { name: t('work'), href: `/${locale}/work` },
+    { name: t('contact'), href: `/${locale}/contact` },
   ]
 
   const legalLinks = [
-    { name: t('privacyPolicy'), href: '/privacy-policy' },
-    { name: t('termsOfService'), href: '/terms-of-service' },
+    { name: t('privacyPolicy'), href: `/${locale}/privacy-policy` },
+    { name: t('termsOfService'), href: `/${locale}/terms-of-service` },
   ]
   return (
     <footer className="bg-brand-dark text-white">
@@ -24,7 +25,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Column 1: Logo and Description */}
           <div className="space-y-4">
-            <Link href="/" className="font-serif text-2xl font-bold hover:text-gray-300 transition-colors">
+            <Link href={`/${locale}`} className="font-serif text-2xl font-bold hover:text-gray-300 transition-colors">
               RAGG
             </Link>
             <p className="text-gray-300 text-sm leading-relaxed">
