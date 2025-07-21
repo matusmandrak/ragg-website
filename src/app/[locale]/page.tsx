@@ -27,6 +27,12 @@ export default function HomePage() {
   } = useForm<IHomepageForm>();
 
   const onSubmit = async (data: IHomepageForm) => {
+    if (!supabase) {
+      console.error('Supabase client not initialized. Check environment variables.');
+      setSubmitError(t('ContactPage.errorMessage'));
+      return; 
+    }
+    
     setIsSubmitting(true);
     setSubmitError(null);
 
